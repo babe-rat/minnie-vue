@@ -1,0 +1,17 @@
+node_modules
+
+dist
+es
+lib
+docs-dist
+
+package.json
+
+.cache
+.docz
+.umi
+
+*.lock
+*.snap
+*.yaml
+*.yml

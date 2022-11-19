@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "基于 element-plus 封装的 Vue3 组件库",
+  "main": "index.js",
+  "scripts": {
+    "dev": "initial-scan --srcDir ./packages/components/src && vitepress dev .docs --host",
+    "site:build": "cross-env NODE_ENV=production vitepress build .docs",
+    "site:deploy": "gh-pages -d .docs/.vitepress/dist -t true",
+    "changelog": "shuke changelog",
+    "lint": "eslint ./packages/components --ext .js,.ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babe-rat/minnie-vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babe-rat/minnie-vue/issues"
+  },
+  "homepage": "https://github.com/babe-rat/minnie-vue#readme",
+  "devDependencies": {
+    "@baberat/eslint-config-beita": "^1.0.2",
+    "@baberat/shuke": "^0.2.0",
+    "@ruabick/md-demo-plugins": "^0.2.9",
+    "@ruabick/vite-plugin-gen-temp": "^0.2.8",
+    "@ruabick/vitepress-demo-block": "^0.2.9",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.28.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.11.4",
+    "unplugin-vue-components": "^0.22.9",
+    "vite": "^3.2.4",
+    "vite-plugin-imp": "^2.3.1",
+    "vitepress": "1.0.0-alpha.29"
+  }
+}
