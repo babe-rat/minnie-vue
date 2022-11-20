@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import DemoBlock from '@ruabick/vitepress-demo-block'
 import '@ruabick/vitepress-demo-block/dist/style.css'
+import '@baberat/minnie-vue/style'
 import './var.css'
 
 export default {

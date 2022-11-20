@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 import { applyPlugins } from '@ruabick/md-demo-plugins'
 import { genTemp } from '@ruabick/vite-plugin-gen-temp'
 import { resolve } from 'path'
-import vitePluginImp from 'vite-plugin-imp'
 import { sidebar } from './sidebar.js'
 
 export default defineConfig({
@@ -36,22 +35,10 @@ export default defineConfig({
     },
     vue: {},
     vite: {
-        plugins: [
-            vitePluginImp({
-                libList: [
-                    {
-                        libName: '@baberat/minnie-vue',
-                        style(name) {
-                            return resolve(`./packages/components/src/${name}/style/index.ts`)
-                        },
-                    },
-                ],
-            }),
-            genTemp('./packages/components/src'),
-        ],
+        plugins: [genTemp('./packages/components/src')],
         resolve: {
             alias: {
-                '@baberat/minnie-vue': resolve('./packages/components/src/index.ts'),
+                '@baberat/minnie-vue': resolve('./packages/components/src'),
             },
         },
     },

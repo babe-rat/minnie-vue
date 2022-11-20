@@ -1,6 +1,10 @@
 <template>
     <el-button type="primary" @click="showModal">Open Modal</el-button>
-    <min-modal v-model="visible"></min-modal>
+    <min-modal v-model="visible" title="Basic Modal">
+        <div>Some contents...</div>
+        <div>Some contents...</div>
+        <div>Some contents...</div>
+    </min-modal>
 </template>
 
 <script setup>
