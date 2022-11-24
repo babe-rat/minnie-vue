@@ -9,7 +9,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import { MinModal } from '@baberat/minnie-vue'
 
 const visible = ref(false)
 

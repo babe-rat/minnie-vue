@@ -1,0 +1,26 @@
+{
+  "name": "@baberat/minnie-vue-resolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "types": "index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash.kebabcase": "^4.1.7",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "^4.1.1",
+    "unplugin-vue-components": "^0.22.11"
+  }
+}

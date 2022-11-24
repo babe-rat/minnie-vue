@@ -7,3 +7,5 @@ doc-dist
 
 docs
 .docs
+
+packages/minnie-vue-resolver/index.js

@@ -19,3 +19,6 @@ pnpm-lock.yaml
 .docs
 
 .DS_Store    
+
+packages/minnie-vue-resolver/index.js
+packages/minnie-vue-resolver/index.d.ts

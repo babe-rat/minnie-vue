@@ -23,6 +23,7 @@
   "homepage": "https://github.com/babe-rat/minnie-vue#readme",
   "devDependencies": {
     "@baberat/eslint-config-beita": "^1.0.2",
+    "@baberat/minnie-vue-resolver": "workspace:^1.0.0",
     "@baberat/shuke": "^0.2.0",
     "@ruabick/md-demo-plugins": "^0.2.9",
     "@ruabick/vite-plugin-gen-temp": "^0.2.8",
