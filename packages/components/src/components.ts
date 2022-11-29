@@ -1,1 +1,2 @@
-export { MinModal } from './min-modal'
+export { MinConfigProvider } from './config-provider'
+export { MinModal } from './modal'

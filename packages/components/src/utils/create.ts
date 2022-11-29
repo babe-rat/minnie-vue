@@ -1,3 +1,18 @@
+import { get } from './basic'
+import { isFunction } from './validate'
+import { camelize } from './format'
+import locale from '../locale'
+
+export function createTranslate(name: string) {
+    const prefix = 'min.' + camelize(name) + '.'
+
+    return (path: string, ...args: unknown[]) => {
+        const messages = locale.messages()
+        const message = get(messages, prefix + path) || get(messages, path)
+        return isFunction(message) ? message(...args) : message
+    }
+}
+
 export type Mod = string | { [key: string]: any }
 export type Mods = Mod | Mod[]
 
@@ -38,7 +53,7 @@ export function createBEM(name: string) {
     }
 }
 
-export function createNamespace(name: string): [string, (el?: Mods, mods?: Mods) => Mods] {
+export function createNamespace(name: string): [string, (el?: Mods, mods?: Mods) => Mods, any] {
     const prefixedName = `min-${name}`
-    return [prefixedName, createBEM(prefixedName)]
+    return [prefixedName, createBEM(prefixedName), createTranslate(name)]
 }

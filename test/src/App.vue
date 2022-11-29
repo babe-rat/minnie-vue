@@ -1,8 +1,18 @@
+<template>
+    <min-config-provider :locale="enUS">
+        <a @click="visible = true">打开</a>
+        <a @click="switchLocale">国际化切换</a>
+        <min-modal v-model="visible"></min-modal>
+    </min-config-provider>
+</template>
+
 <script setup>
 import { ref } from 'vue'
-const visible = ref(true)
-</script>
+import { Locale } from '@baberat/minnie-vue'
+import enUS from '@baberat/minnie-vue/es/locale/lang/en-US'
+const visible = ref(false)
 
-<template>
-    <div><min-modal v-model="visible"></min-modal></div>
-</template>
+function switchLocale() {
+    Locale.use('en-US', enUS)
+}
+</script>

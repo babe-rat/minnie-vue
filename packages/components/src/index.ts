@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-
+import { Locale } from './locale'
 import * as components from './components'
 
 export * from './components'
@@ -14,6 +14,8 @@ export const install = function (app: App) {
 
     return app
 }
+
+export { Locale }
 
 export default {
     install,

@@ -5,7 +5,7 @@ import { ElSpace } from 'element-plus/es/components/space/index'
 
 import { createNamespace } from '../utils'
 
-const [name, bem] = createNamespace('modal')
+const [name, bem, t] = createNamespace('modal')
 
 export const modalProps = {
     modelValue: Boolean,
@@ -28,11 +28,9 @@ export const modalProps = {
     },
     cancelText: {
         type: String,
-        default: '取消',
     },
     okText: {
         type: String,
-        default: '确定',
     },
     okButton: {
         type: Boolean,
@@ -67,14 +65,14 @@ export default defineComponent({
             return (
                 <div class={bem('footer')}>
                     <ElSpace>
-                        <ElButton onClick={onClose}>{props.cancelText}</ElButton>
+                        <ElButton onClick={onClose}>{props.cancelText || t('cancelText')}</ElButton>
                         {props.okButton && (
                             <ElButton
                                 type="primary"
                                 loading={props.confirmLoading}
                                 onClick={onConfirm}
                             >
-                                {props.okText}
+                                {props.okText || t('okText')}
                             </ElButton>
                         )}
                     </ElSpace>

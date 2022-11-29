@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import DemoBlock from '@ruabick/vitepress-demo-block'
 import '@ruabick/vitepress-demo-block/dist/style.css'
+import Minnie from '@baberat/minnie-vue'
 import '@baberat/minnie-vue/style'
 import './var.css'
 
@@ -12,5 +13,6 @@ export default {
         // router is VitePress' custom router. `siteData` is
         // a `ref` of current site-level metadata.
         app.component('demo', DemoBlock)
+        app.use(Minnie)
     },
 }

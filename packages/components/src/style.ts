@@ -1,1 +1,1 @@
-import './min-modal/style'
+import './modal/style'

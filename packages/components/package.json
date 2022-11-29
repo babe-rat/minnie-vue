@@ -2,7 +2,9 @@
   "name": "@baberat/minnie-vue",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "scripts": {
     "dev": "shuke compile --watch",
     "build": "shuke compile"
