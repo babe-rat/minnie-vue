@@ -4,7 +4,8 @@ export const sidebar = {
             text: '开发指南',
             items: [
                 { text: '快速上手', link: '/' },
-                { text: '国际化', link: '/locale' },
+                { text: '国际化', link: '/guide/locale' },
+                { text: '主题', link: '/guide/theme' },
             ],
         },
         {

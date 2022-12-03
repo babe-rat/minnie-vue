@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ElButton: typeof import('element-plus/es')['ElButton']
     MinConfigProvider: typeof import('@baberat/minnie-vue/es')['MinConfigProvider']
     MinModal: typeof import('@baberat/minnie-vue/es')['MinModal']
   }

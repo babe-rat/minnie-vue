@@ -1,11 +1,9 @@
-$border-color: rgba(0, 0, 0, 0.06);
-
 .min-modal {
     .el-dialog__header {
         padding: 16px 24px;
         color: #000000d9;
         background: #fff;
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid var(--min-border-color);
         margin: 0;
     }
     .el-dialog__title {
@@ -27,7 +25,7 @@ $border-color: rgba(0, 0, 0, 0.06);
         padding: 10px 16px;
         text-align: right;
         background: 0 0;
-        border-top: 1px solid $border-color;
+        border-top: 1px solid var(--min-border-color);
         .el-button {
             border-radius: 2px;
         }

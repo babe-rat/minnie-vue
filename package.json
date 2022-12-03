@@ -30,6 +30,7 @@
     "@ruabick/vitepress-demo-block": "^0.2.9",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
     "cross-env": "^7.0.3",
+    "element-plus": "^2.2.22",
     "eslint": "^8.28.0",
     "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",

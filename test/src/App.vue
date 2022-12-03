@@ -1,6 +1,6 @@
 <template>
     <min-config-provider :locale="enUS">
-        <a @click="visible = true">打开</a>
+        <a @click="visible = true" type="primary">打开</a>
         <a @click="switchLocale">国际化切换</a>
         <min-modal v-model="visible"></min-modal>
     </min-config-provider>

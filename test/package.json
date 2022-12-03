@@ -11,6 +11,7 @@
   "dependencies": {
     "@baberat/minnie-vue": "workspace:^1.0.0",
     "@baberat/minnie-vue-resolver": "workspace:^1.0.0",
+    "element-plus": "^2.2.22",
     "vue": "^3.2.41"
   },
   "devDependencies": {
